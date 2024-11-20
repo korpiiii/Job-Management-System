@@ -1,0 +1,313 @@
+/* Import Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2f33;
+    color: #f4f4f5;
+}
+
+header {
+    background-color: #23272a;
+    color: #64ffda;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+    color: #b3b3b3;
+}
+
+/* Main Content */
+main {
+    padding: 120px 20px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Dashboard Section */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #3a3b3d;
+    padding: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #64ffda;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.add-btn {
+    padding: 10px 20px;
+    background-color: #64ffda;
+    color: #2c2f33;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #52d4b4;
+}
+
+/* Search Section */
+.search-container {
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container input {
+    width: 80%;
+    padding: 12px 20px;
+    border: 1px solid #3a3b3d;
+    border-radius: 30px;
+    font-size: 16px;
+    background: #3a3b3d;
+    color: #f4f4f5;
+    outline: none;
+}
+
+.search-container .search-icon {
+    position: absolute;
+    right: 12%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #64ffda;
+}
+
+/* Table Section */
+.applicant-table-container {
+    background: #3a3b3d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #3a3b3d;
+}
+
+table th {
+    background: #64ffda;
+    color: #1c1c1e;
+    font-size: 14px;
+}
+
+table td {
+    font-size: 14px;
+    color: #f4f4f5;
+}
+
+table tr:hover {
+    background: #323336;
+}
+
+.actions i {
+    cursor: pointer;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.actions i:hover {
+    color: #64ffda;
+}
+
+/* Modal Section */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+}
+
+.modal-content {
+    background: #3a3b3d;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 40%;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.modal-content h2 {
+    color: #64ffda;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.modal-content form {
+    display: grid;
+    gap: 15px;
+}
+
+.modal-content form input,
+.modal-content form textarea,
+.modal-content form button {
+    padding: 12px;
+    border: 1px solid #3a3b3d;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #2c2f33;
+    color: #f4f4f5;
+    outline: none;
+}
+
+.modal-content form textarea {
+    resize: none;
+    height: 80px;
+}
+
+.modal-content form button {
+    background-color: #64ffda;
+    color: #2c2f33;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal-content form button:hover {
+    background-color: #52d4b4;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #f4f4f5;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #23272a;
+    color: #b3b3b3;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Updated Button Styles */
+.add-btn {
+    padding: 10px 20px;
+    background-color: #64ffda;
+    color: #2c2f33;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #52d4b4;
+}
+
+/* Modal Enhancements */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background: #3a3b3d;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #f4f4f5;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px;
+    background-color: #64ffda;
+    border: none;
+    border-radius: 5px;
+    color: #2c2f33;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #52d4b4;
+}
+
